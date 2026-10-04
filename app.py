@@ -8,7 +8,7 @@ import cv2
 import matplotlib.pyplot as plt
 from PIL import Image
 import streamlit as st
-from moviepy import VideoFileClip
+from moviepy.editor import VideoFileClip
 
 # Import modul internal
 from tahap2_preprocessing import VisualPreprocessor, AudioPreprocessor

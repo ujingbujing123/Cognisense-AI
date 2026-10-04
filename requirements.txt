@@ -7,4 +7,4 @@ pillow
 matplotlib
 numpy
 pandas
-moviepy
+moviepy==1.0.3

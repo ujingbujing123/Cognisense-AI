@@ -14,6 +14,11 @@ from moviepy.editor import VideoFileClip
 from tahap2_preprocessing import VisualPreprocessor, AudioPreprocessor
 from tahap3_architecture import EduInclusiveFusionModel
 
+# Paksa git lfs pull saat app Streamlit Cloud running
+CKPT_PATH = "./checkpoints/best_model.pth"
+if not os.path.exists(CKPT_PATH) or os.path.getsize(CKPT_PATH) < 1000000:
+    os.system("git lfs pull")
+
 # =============================================================================
 # CONFIG & PAGE SETUP
 # =============================================================================
